@@ -1,14 +1,14 @@
 $("#formulario").validate({
     rules: {
-        nombre: {
-            
-            //remote: php/users.php
+        nombre: {            
+            remote: 'php/users.php',
             required: true,
-            inlength: 2
+            minlength: 2
             },
-        email: "required",
-            //remote: php/emails.php
-
+        email:{             
+            remote: 'php/emails.php',
+            required: true
+        },
         comentarios: "required"
         }
      });
